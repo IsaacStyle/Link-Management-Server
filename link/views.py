@@ -7,6 +7,6 @@ from .serializers import LinkSerializer
 from .models import Link
 
 class LinkViewSet(viewsets.ModelViewSet):
-    # permission_classes = [IsAuthenticatedOrReadOnly]
+    permission_classes = [IsAuthenticatedOrReadOnly]
     queryset = Link.objects.all()
     serializer_class = LinkSerializer
