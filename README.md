@@ -1,3 +1,3 @@
-## Django Template
+## Link Management Server
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/GB6Eki?referralCode=U5zXSw)
+A Postgresql-Django backend server for a Link management Retool app.
