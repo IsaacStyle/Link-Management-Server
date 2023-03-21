@@ -16,16 +16,16 @@ class Link(models.Model):
     alias = models.CharField(max_length = 30)
     link = models.TextField()
     category = models.CharField(max_length = 30)
-    # categoryId = models.OneToOneField(
-    #     Category,
-    #     on_delete=models.CASCADE,
-    #     default=2
-    # )
-    # team = models.OneToOneField(
-    #     Team,
-    #     on_delete=models.CASCADE,
-    #     default=2
-    # )
+    categoryId = models.ForeignKey(
+        Category,
+        on_delete=models.CASCADE,
+        default=1
+    )
+    team = models.ForeignKey(
+        Team,
+        on_delete=models.CASCADE,
+        default=1
+    )
 
     def __str__(self):
         return f"{self.alias}"
